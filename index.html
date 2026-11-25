@@ -1,1 +1,154 @@
-Merhaba
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası · Privacy Policy — OBD Araba Dedektifi / OBD Car Detective</title>
+<!-- Metin kaynağı: bu dosya ile repo kökündeki gizlilik_politikasi.md birebir aynı metni taşır; biri değişirse öbürü de değişir. -->
+<style>
+:root{--bg:#ffffff;--fg:#1b1f24;--muted:#57606a;--line:#d0d7de;--accent:#0b5cad;--note-bg:#fff4d6;--note-fg:#5c4400;--note-line:#e3c26b}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1216;--fg:#e6e9ed;--muted:#a3abb5;--line:#30363d;--accent:#6cb6ff;--note-bg:#3a2f10;--note-fg:#f5dc9a;--note-line:#7a6220}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:1.25rem 1rem 3rem}
+h1{font-size:1.6rem;line-height:1.25;margin:1.25rem 0 .25rem}
+h2{font-size:1.15rem;margin:1.75rem 0 .5rem;padding-top:.75rem;border-top:1px solid var(--line)}
+p,li{overflow-wrap:anywhere}
+ul{padding-left:1.25rem}
+a{color:var(--accent)}
+.meta{color:var(--muted);margin:0 0 1rem}
+.note{background:var(--note-bg);color:var(--note-fg);border:1px solid var(--note-line);border-radius:.5rem;padding:.6rem .8rem;font-weight:600}
+.langs{display:flex;gap:.5rem;justify-content:flex-end}
+.langs input{position:absolute;opacity:0;pointer-events:none}
+.langs label{border:1px solid var(--line);border-radius:999px;padding:.25rem .85rem;cursor:pointer;color:var(--muted);user-select:none}
+#l-tr:checked~.langs label[for=l-tr],#l-en:checked~.langs label[for=l-en]{border-color:var(--accent);color:var(--accent);font-weight:600}
+#l-tr:focus-visible~.langs label[for=l-tr],#l-en:focus-visible~.langs label[for=l-en]{outline:2px solid var(--accent);outline-offset:2px}
+#l-tr,#l-en{position:absolute;opacity:0;pointer-events:none}
+.en{display:none}
+#l-en:checked~.tr{display:none}
+#l-en:checked~.en{display:block}
+</style>
+</head>
+<body>
+<main>
+<input type="radio" name="lang" id="l-tr" checked>
+<input type="radio" name="lang" id="l-en">
+<div class="langs" role="group" aria-label="Dil / Language">
+<label for="l-tr" lang="tr">Türkçe</label>
+<label for="l-en" lang="en">English</label>
+</div>
+
+<article class="tr" lang="tr">
+<p class="note">Taslak, hukuki inceleme bekliyor.</p>
+<h1>OBD Araba Dedektifi Gizlilik Politikası</h1>
+<p class="meta">Yayın tarihi: 25 Kasım 2026</p>
+<p>Bu sayfa, OBD Araba Dedektifi Android uygulamasının ("Uygulama") hangi verileri nerede tuttuğunu ve hangi izinleri neden kullandığını açıklar.</p>
+
+<h2>1. Kısaca</h2>
+<ul>
+<li>Uygulamada hesap ya da giriş yoktur; ad, e-posta veya telefon numarası istenmez.</li>
+<li>Uygulamada analitik, çökme raporlama veya reklam aracı yoktur.</li>
+<li>Uygulamanın bir sunucusu yoktur; Uygulama geliştiriciye veri göndermez.</li>
+<li>Araç, tarama ve servis verileri cihazda, Uygulamanın kendi depolama alanında saklanır.</li>
+</ul>
+
+<h2>2. Cihazda saklanan veriler</h2>
+<ul>
+<li>Araç şasi numarası (VIN) ve araç bilgileri (marka, model, yıl, motor, yakıt türü, isteğe bağlı motor numarası ve kilometre).</li>
+<li>Garaj kayıtları.</li>
+<li>Tarama geçmişi (hata kodları, sensör değerleri, bulgular; araç başına en fazla 10 kayıt).</li>
+<li>Servis defteri kayıtları (bakım türü, tarih, kilometre, not).</li>
+<li>Kendi tanımladığınız özel PID'ler.</li>
+<li>Son kullanılan adaptörün adı ve adresi (Bluetooth adresi, Wi-Fi adresi ya da USB aygıt yolu); açılışta bu adaptöre otomatik bağlanma Ayarlar'dan kapatılabilir.</li>
+<li>Uygulama ayarları ve kullanım koşulları onay kaydı (sürüm ve tarih).</li>
+</ul>
+<p>VIN, cihaz içindeki üretici tablosuyla çözümlenir; çevrim içi bir VIN sorgusu yapılmaz.</p>
+<p>Konsoldaki işlem günlüğü yalnız Uygulama açıkken bellekte tutulur, kaydedilmez.</p>
+
+<h2>3. İzinler ve bağlantılar</h2>
+<ul>
+<li><strong>Bluetooth (Yakındaki cihazlar):</strong> Telefonla eşleştirilmiş OBD-II Bluetooth adaptörünü listelemek ve ona bağlanmak için. Uygulama çevredeki cihazları taramaz ve konum izni istemez.</li>
+<li><strong>İnternet:</strong> Yalnız Wi-Fi OBD-II adaptörü için. Uygulama, Ayarlar'da kullanıcının girdiği adaptör adresine (varsayılan 192.168.0.10, bağlantı noktası 35000) doğrudan TCP bağlantısı kurar ve bu bağlantıdan yalnız adaptör ve OBD komutları gönderir. Başka bir sunucuya bağlanmaz.</li>
+<li><strong>USB:</strong> USB OTG kablolu adaptör için ayrıca izin bildirilmez; kablo takıldığında Android o aygıt için izninizi sorar.</li>
+</ul>
+
+<h2>4. Paylaşma ve kopyalama</h2>
+<p>Raporlar (PDF), kayıtlar (CSV) ve grafikler (PNG) yalnız siz "Paylaş"a dokunduğunuzda cihazda geçici dosya olarak oluşturulur ve Android paylaşım penceresinde seçtiğiniz uygulamaya iletilir. "Kopyala" düğmeleri metni yalnız telefonun panosuna alır. Paylaştığınız ya da yapıştırdığınız içerik, artık seçtiğiniz uygulamanın kurallarına tabidir.</p>
+<p>Paylaşılan ve kopyalanan raporlarda VIN'in son 6 hanesi varsayılan olarak gizlenir. Dedektif &gt; Rapor bölümündeki "Tam VIN" seçeneğini açarsanız rapor tam VIN'i içerir.</p>
+
+<h2>5. Silme</h2>
+<ul>
+<li><strong>Ayarlar &gt; Yasal &gt; Hakkında ve Yasal &gt; Tüm yerel verileri sil:</strong> Uygulamanın kaydettiği bütün veriler ve ayarlar ile paylaşım için oluşturulan geçici dosyalar silinir.</li>
+<li>Paylaşım için oluşturulan geçici dosyaların 1 günden eski olanları Uygulama açılırken de silinir.</li>
+<li>Garajdan bir aracı sildiğinizde o aracın servis kayıtları da silinir.</li>
+<li>Uygulamayı kaldırmak ya da Android ayarlarından Uygulama verilerini temizlemek de verileri siler.</li>
+</ul>
+<p>Başka uygulamalara paylaştığınız kopyalar bu yollarla silinmez.</p>
+
+<h2>6. Değişiklikler</h2>
+<p>Bu politika güncellenebilir. Güncel metin bu adreste yayınlanır ve yukarıdaki tarih değiştirilir.</p>
+
+<h2>7. İletişim</h2>
+<p><a href="mailto:plainobd@gmail.com">plainobd@gmail.com</a></p>
+</article>
+
+<article class="en" lang="en">
+<p class="note">Draft, pending legal review.</p>
+<h1>OBD Car Detective Privacy Policy</h1>
+<p class="meta">Published: November 25, 2026</p>
+<p>This page explains what data the OBD Car Detective Android app ("the App") keeps, where it keeps it, and why it uses each permission.</p>
+
+<h2>1. In short</h2>
+<ul>
+<li>The App has no account or sign-in; it does not ask for your name, email or phone number.</li>
+<li>The App contains no analytics, crash reporting or advertising tools.</li>
+<li>The App has no server; the App does not send data to the developer.</li>
+<li>Car, scan and service data are stored on the device, in the App's own storage.</li>
+</ul>
+
+<h2>2. Data stored on the device</h2>
+<ul>
+<li>Vehicle identification number (VIN) and car details (make, model, year, engine, fuel type, optional engine number and mileage).</li>
+<li>Garage entries.</li>
+<li>Scan history (trouble codes, sensor values, findings; at most 10 entries per car).</li>
+<li>Service book entries (service type, date, mileage, note).</li>
+<li>Custom PIDs you define.</li>
+<li>Name and address of the last adapter used (Bluetooth address, Wi-Fi address or USB device path); connecting to it automatically at launch can be turned off in Settings.</li>
+<li>App settings and the record of your acceptance of the terms of use (version and date).</li>
+</ul>
+<p>The VIN is decoded with a manufacturer table on the device; no online VIN lookup is made.</p>
+<p>The console log is kept in memory only while the App is open and is not saved.</p>
+
+<h2>3. Permissions and connections</h2>
+<ul>
+<li><strong>Bluetooth (Nearby devices):</strong> To list the OBD-II Bluetooth adapter paired with your phone and connect to it. The App does not scan for nearby devices and does not ask for location permission.</li>
+<li><strong>Internet:</strong> Only for Wi-Fi OBD-II adapters. The App opens a direct TCP connection to the adapter address the user enters in Settings (default 192.168.0.10, port 35000) and sends only adapter and OBD commands over it. It does not connect to any other server.</li>
+<li><strong>USB:</strong> No separate permission is declared for USB OTG cable adapters; when a cable is plugged in, Android asks for your permission for that device.</li>
+</ul>
+
+<h2>4. Sharing and copying</h2>
+<p>Reports (PDF), logs (CSV) and charts (PNG) are created on the device as temporary files only when you tap share, and are passed to the app you choose in the Android share sheet. Copy buttons only put text on the phone's clipboard. Content you share or paste is then subject to the rules of the app you chose.</p>
+<p>In shared and copied reports, the last 6 characters of the VIN are hidden by default. If you turn on the "Tam VIN" (Full VIN) option in Detective &gt; Report, the report contains the full VIN.</p>
+
+<h2>5. Deletion</h2>
+<ul>
+<li><strong>Settings &gt; Yasal &gt; Hakkında ve Yasal &gt; "Tüm yerel verileri sil" (Delete all local data; this screen is currently in Turkish only):</strong> Deletes all data and settings the App has saved, together with the temporary files created for sharing.</li>
+<li>Temporary sharing files older than 1 day are also deleted when the App starts.</li>
+<li>Deleting a car from the garage also deletes that car's service entries.</li>
+<li>Uninstalling the App or clearing its data in Android settings also deletes the data.</li>
+</ul>
+<p>Copies you have shared with other apps are not deleted by these steps.</p>
+
+<h2>6. Changes</h2>
+<p>This policy may be updated. The current text is published at this address and the date above is changed.</p>
+
+<h2>7. Contact</h2>
+<p><a href="mailto:plainobd@gmail.com">plainobd@gmail.com</a></p>
+</article>
+</main>
+<script>
+(function(){try{var l=(navigator.language||"").toLowerCase();if(l.indexOf("tr")!==0){document.getElementById("l-en").checked=true;document.documentElement.lang="en";}document.getElementById("l-tr").onchange=function(){document.documentElement.lang="tr"};document.getElementById("l-en").onchange=function(){document.documentElement.lang="en"};}catch(e){}})();
+</script>
+</body>
+</html>
